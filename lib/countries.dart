@@ -2263,7 +2263,7 @@ const List<Country> countries = [
     code: "FR",
     dialCode: "33",
     minLength: 9,
-    maxLength: 9,
+    maxLength: 10,
   ),
   Country(
     name: "French Guiana",
