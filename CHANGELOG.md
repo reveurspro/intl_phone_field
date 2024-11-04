@@ -1,3 +1,20 @@
+## [3.3.0] - Release
+
+- Add `magnifierConfiguration` to customize the magnifier.
+- Add `formFieldKey` for the phone input text field key.
+- Update phone number length of several countries.
+
+## [3.2.0] - Release
+
+- Add `autofillHints` and disable posibility.
+- Improve search (#243).
+- Sort countries by name ascending (#243).
+- Use flag emoji instead of images on mobile (#243).
+- Add country name translations (#243).
+- Fix `initialCountryCode` and add dial code support (58152d7cbefaf410c710d2e64680a9e4dd6015dd and 43362292198abc03ea1ce642ed5baa33b9fd8445).
+- Add [flutter_lints](https://pub.dev/packages/flutter_lints) (6c19cbec745502e3865b9190cd1d399f7e909ddb).
+- Update phone number length of several countries.
+
 ## [3.1.0] - Release
 
 - **Breaking** `validator` function parameter type is [PhoneNumber] now instead of [String].

@@ -185,8 +185,8 @@ const List<Country> countries = [
     flag: "🇦🇩",
     code: "AD",
     dialCode: "376",
-    minLength: 9,
-    maxLength: 9,
+    minLength: 6,
+    maxLength: 6,
   ),
   Country(
     name: "Angola",
@@ -1889,9 +1889,9 @@ const List<Country> countries = [
     },
     flag: "🇩🇴",
     code: "DO",
-    dialCode: "1849",
-    minLength: 12,
-    maxLength: 12,
+    dialCode: "1",
+    minLength: 10,
+    maxLength: 10,
   ),
   Country(
     name: "Ecuador",
@@ -2510,8 +2510,8 @@ const List<Country> countries = [
     flag: "🇬🇭",
     code: "GH",
     dialCode: "233",
-    minLength: 10,
-    maxLength: 10,
+    minLength: 9,
+    maxLength: 9,
   ),
   Country(
     name: "Gibraltar",
@@ -3315,9 +3315,9 @@ const List<Country> countries = [
     },
     flag: "🇮🇹",
     code: "IT",
-    dialCode: "41",
-    minLength: 13,
-    maxLength: 13,
+    dialCode: "39",
+    minLength: 9,
+    maxLength: 10,
   ),
   Country(
     name: "Jamaica",
@@ -4091,8 +4091,8 @@ const List<Country> countries = [
     flag: "🇲🇾",
     code: "MY",
     dialCode: "60",
-    minLength: 11,
-    maxLength: 11,
+    minLength: 9,
+    maxLength: 10,
   ),
   Country(
     name: "Maldives",
@@ -6571,7 +6571,7 @@ const List<Country> countries = [
     flag: "🇨🇭",
     code: "CH",
     dialCode: "41",
-    minLength: 12,
+    minLength: 9,
     maxLength: 12,
   ),
   Country(
@@ -6602,8 +6602,8 @@ const List<Country> countries = [
     flag: "🇸🇾",
     code: "SY",
     dialCode: "963",
-    minLength: 10,
-    maxLength: 10,
+    minLength: 9,
+    maxLength: 9,
   ),
   Country(
     name: "Taiwan",
@@ -7558,14 +7558,14 @@ class Country {
   });
 
   String get fullCountryCode {
-    return this.dialCode + this.regionCode;
+    return dialCode + regionCode;
   }
 
   String get displayCC {
-    if (this.regionCode != "") {
-      return "${this.dialCode} ${this.regionCode}";
+    if (regionCode != "") {
+      return "$dialCode $regionCode";
     }
-    return this.dialCode;
+    return dialCode;
   }
 
   String localizedName(String languageCode) {
